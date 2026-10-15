@@ -1,0 +1,9 @@
+services:
+  lab6:
+    build: .
+    container_name: lab6-rest-grpc
+    restart: unless-stopped
+    volumes:
+      - ./:/lab
+    stdin_open: true
+    tty: true
